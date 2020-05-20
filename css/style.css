@@ -1,0 +1,32 @@
+.start {
+    height: 100vh;
+    background-color: #311437;
+}
+
+.neon {
+    color: #fff;
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #f2f2f2,
+    0 0 20px #f2f2f2ff,
+    0 0 40px #B5CC03,
+    0 0 80px #B5CC08,
+    0 0 90px #B5CC03,
+    0 0 100px #B5CC03,
+    0 0 150px #B5CC11;
+    font-size: 7em;
+    z-index: 2;
+    animation-name: fade-in-right;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in-right {
+    0% {
+        font-size: 3em;
+        opacity: 0;
+    }
+    100% {
+        font-size: 6em;
+        opacity: 1;
+    }
+}
