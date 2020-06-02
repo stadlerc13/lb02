@@ -10598,8 +10598,8 @@ body.scrollable {
 
 .carousel .carousel-control-prev-icon,
 .carousel .carousel-control-next-icon {
-    width: 20px;
-    height: 20px
+    width: 5vw;
+    height: 5vw;
 }
 
 .carousel .carousel-control-prev-icon {
