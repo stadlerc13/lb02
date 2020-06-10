@@ -1,11 +1,14 @@
 body {
-    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
 
 #start {
     height: 100vh;
     background-color: #311437;
 }
+
 
 .menu-item,
 .menu-open-button {
@@ -297,6 +300,18 @@ nav a {
 .credit a:hover {
     text-decoration: none;
 }
+
+.articletitle {
+
+    text-align: center;
+    padding: 0 0 10vh 0;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.titleneon {
+    margin: 0 0 15vh 0;
+}
 .neon {
     color: #fff;
     text-shadow: 0 0 5px #fff,
@@ -312,6 +327,9 @@ nav a {
     animation-name: fade-in-right;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
 }
 
 @keyframes fade-in-right {
@@ -324,6 +342,7 @@ nav a {
         opacity: 1;
     }
 }
+
 @keyframes jello-diagonal-1 {
     0% {
         transform: skew(0deg 0deg);
@@ -359,7 +378,7 @@ nav a {
 
 #gallery {
     height: 100vh;
-    padding: 0 15vw;
+    padding: 0 15vw 20vh 15vw;
 }
 
 .carousel .carousel-control-prev-icon,
@@ -377,11 +396,68 @@ nav a {
 
 }
 
+.grid {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-container {
+    width: 27vw;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-container:hover .img-content-hover {
+    display: block;
+}
+
+#sneakpeek {
+    padding: 0 0 20vh 0;
+}
+.sneakpeek {
+    width: 25vw;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    margin: 1vw;
+}
+
+.sneakpeek:hover {
+    transform: scale(1.05);
+}
+
+.img-content-hover {
+    position: absolute;
+    z-index: 1;
+    white-space: nowrap;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+    font-weight: 400;
+    margin-top: 1.25rem;
+    margin-left: -2rem;
+}
+
+
+.title {
+    color: #2e2e2e;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.category {
+    font-size: 1rem;
+    color: #787878;
+}
+
+.img-content {
+    display: none;
+}
+
 .rw-wrapper {
     width: 60vw;
-    position: relative;
-    padding-left: 20vw;
-    padding-top: 15vh;
 }
 
 .rw-sentence {
@@ -565,7 +641,7 @@ nav a {
 }
 
 #inspo {
-    margin-bottom: 15vh;
+   margin: 20vh 0;
 }
 
 
@@ -632,3 +708,128 @@ nav a {
         left: 125%;
     }
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20vw;
+    align-items: center;
+    height: 20vh;
+    font-size: 1.2em;
+}
+
+footer p {
+    font-style: italic;
+    font-weight: 300;
+    color: #C2C2C2;
+}
+
+.end {
+    font-size: 10em;
+    font-weight: 700;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+@-webkit-keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+#shop {
+    padding: 0 20vw 20vh 20vw;
+}
+
+.lemongreen {
+    background-color: #B5CC03;
+}
+
+#gallery {
+    padding: 0 20vw 20vh 20vw;
+}
+.carousel-control-prev1,
+.carousel-control-next1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-control-prev1,
+    .carousel-control-next1 {
+        transition: none;
+    }
+}
+
+.carousel-control-prev1:hover, .carousel-control-prev:focus,
+.carousel-control-next1:hover,
+.carousel-control-next1:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+}
+
+.carousel-control-prev1 {
+    left: 15vw;
+}
+
+.carousel-control-next1 {
+    right: 15vw;
+}
+
+.carousel-indicators .active1 {
+    opacity: 1;
+    background-color: #0b51c5;
+}
+
+
