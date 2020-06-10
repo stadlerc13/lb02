@@ -4487,12 +4487,14 @@
 
     return Toast;
   }();
+
+
+
   /**
    * ------------------------------------------------------------------------
    * jQuery
    * ------------------------------------------------------------------------
    */
-
 
   $.fn[NAME$a] = Toast._jQueryInterface;
   $.fn[NAME$a].Constructor = Toast;
@@ -4518,4 +4520,5 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
 //# sourceMappingURL=bootstrap.js.map
