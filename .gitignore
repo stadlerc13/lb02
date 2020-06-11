@@ -2,3 +2,7 @@ img/
 /img/
 /img/overlays/
 /img/svg/
+*.png
+*.svg
+*.jpg
+
