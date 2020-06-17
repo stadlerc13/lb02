@@ -10622,7 +10622,8 @@ body.scrollable {
     -webkit-transition-duration: .6s;
     transition-duration: .6s;
     -webkit-transition-property: opacity;
-    transition-property: opacity
+    transition-property: opacity;
+
 }
 
 .carousel-fade .carousel-item.active,
